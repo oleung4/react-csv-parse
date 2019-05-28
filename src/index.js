@@ -20,7 +20,8 @@ class CsvParse extends React.Component {
         const data = results.data
 
         // remove display headers
-        data.shift()
+        // commented out for CSV files without headers, relying on keys
+        // data.shift()
 
         // add api headers
         data.unshift(keys)
